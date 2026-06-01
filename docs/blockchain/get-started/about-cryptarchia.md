@@ -17,9 +17,9 @@ Cryptarchia, the Logos Blockchain's consensus protocol, ensures that the entire 
 
 ## The basics
 
-- Cryptarchia is a Private Proof of Stake (PPoS) consensus protocol, so nodes cannot be linked to the blocks they propose and their relative stake cannot be deduced from activity.
-- Cryptarchia maintains block production during failures, allowing the network to keep operating even if competing forks emerge temporarily.
-- Cryptarchia has low entry barriers, so validator nodes can run on a basic laptop with no minimum stake requirement.
+* Cryptarchia is a Private Proof of Stake (PPoS) consensus protocol, so nodes cannot be linked to the blocks they propose and their relative stake cannot be deduced from activity.
+* Cryptarchia maintains block production during failures, allowing the network to keep operating even if competing forks emerge temporarily.
+* Cryptarchia has low entry barriers, so validator nodes can run on a basic laptop with no minimum stake requirement.
 
 ## Properties of Cryptarchia
 
@@ -33,7 +33,7 @@ Prioritizing liveness means that block production will continue during a failure
 
 Cryptarchia provides PPoS consensus that hides the identity of a block proposer both before and after a proposal. Hiding a proposer’s identity before the proposal is accomplished by using a secret leadership election. This mechanism selects consensus leaders without revealing the leader schedule ahead of time.
 
-For full proposer privacy, a secret leadership election is not enough: once a leader proposes a block, it is [trivial to link them ↗](https://eprint.iacr.org/2021/409.pdf) to their proposed block without additional privacy measures in place. Cryptarchia is designed to work together with the [Blend Network](./about-the-blend-network.md), which obfuscates the link between a proposer and their block. This property creates a much more powerful layer of privacy, resilience and neutrality.
+For full proposer privacy, a secret leadership election is not enough: once a leader proposes a block, it is [trivial to link them ↗](https://eprint.iacr.org/2021/409.pdf) to their proposed block without additional privacy measures in place. Cryptarchia is designed to work together with the [Blend Network](about-the-blend-network.md), which obfuscates the link between a proposer and their block. This property creates a much more powerful layer of privacy, resilience and neutrality.
 
 ### Low barrier to entry
 
@@ -45,9 +45,9 @@ In order to achieve maximum decentralization, Cryptarchia was designed to have l
 
 Following the [Ouroboros ↗](https://www.drwx.org/papers/crypsinous.pdf) model, Cryptarchia divides time into basic units called slots that are grouped into larger units called epochs. Each slot allows for the addition of at most one block to a given chain, while each new epoch refreshes the randomness and eligibility set used for the leadership election. Every Cryptarchia slot is 1 second long, and an epoch is about 7.5 days long. These time units are illustrated in the diagram below.
 
-![The time units used by the Logos Blockchain.](./about-cryptarchia/time-units.png)
+![The time units used by the Logos Blockchain.](../.gitbook/assets/time-units.png)
 
-*The time units used by the Logos Blockchain.*
+_The time units used by the Logos Blockchain._
 
 ### Fork choice rule
 
@@ -57,9 +57,9 @@ When a Logos node is connected to the broader network and sees new honest blocks
 
 When a Logos node is joining the network for the first time, or after a prolonged absence, it must use the boostrapping fork choice rule. Like the online rule, the bootstrapping rule selects the longest chain when competing chains diverged from the node’s preferred chain less than $k$ blocks ago. However, forks diverging more than $k$ blocks ago are not dismissed. On the contrary, such a chain is selected if it has the most blocks (i.e. is the most dense) in the period immediately after the fork. The contrast between these two rules can be seen in the diagram below.
 
-![The Cryptarchia bootstrapping fork choice rule.](./about-cryptarchia/fork-choice.png)
+![The Cryptarchia bootstrapping fork choice rule.](../.gitbook/assets/fork-choice.png)
 
-*The Cryptarchia bootstrapping fork choice rule.*
+_The Cryptarchia bootstrapping fork choice rule._
 
 The bootstrapping rule ensures that honest parties can join or rejoin the protocol after prolonged absences without having to trust another node to select their canonical chain. During normal operations, such a costly fork choice rule is not needed, allowing active nodes to use the online rule without compromising on security.
 
