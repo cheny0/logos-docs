@@ -20,7 +20,7 @@ There is currently no dynamic wallet key management. To add new keys you must ma
 
 Before you start, ensure you have:
 
-- Linux x86_64, or a Raspberry Pi 5 with [Raspberry Pi OS](https://www.raspberrypi.com/software/) installed
+- Linux x86_64, macOS, or a Raspberry Pi 5 with [Raspberry Pi OS](https://www.raspberrypi.com/software/) installed
 - glibc version 2.39 or later (Linux only)
 - At least 64 GB of storage
 
@@ -48,6 +48,13 @@ The node requires zero-knowledge circuit files for cryptographic operations. Dow
     ```sh
     wget https://github.com/logos-blockchain/logos-blockchain/releases/download/0.1.3-rc.1/logos-blockchain-circuits-v0.4.2-linux-x86_64.tar.gz
     wget https://github.com/logos-blockchain/logos-blockchain/releases/download/0.1.2/logos-blockchain-node-linux-x86_64-0.1.2.tar.gz
+    ```
+
+    On macOS (aarch64):
+
+    ```sh
+    wget https://github.com/logos-blockchain/logos-blockchain/releases/download/0.1.2/logos-blockchain-circuits-v0.4.2-macos-aarch64.tar.gz
+    wget https://github.com/logos-blockchain/logos-blockchain/releases/download/0.1.2/logos-blockchain-node-macos-aarch64-0.1.2.tar.gz
     ```
 
     On a Raspberry Pi (aarch64):
