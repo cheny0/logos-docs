@@ -13,6 +13,9 @@
 - [About the Blend Network](concepts/about-the-blend-network.md)
 - [About Zones](concepts/about-zones.md)
 
+## Blend
+
+- [Join the Blend Network as a core node](./blend/join-the-blend-network-as-a-core-node.md)
 ## Zone SDK
 
 - [Bridge assets between Logos Blockchain and a Zone](./zone-sdk/bridge-assets-between-blockchain-and-zone.md)
