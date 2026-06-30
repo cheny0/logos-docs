@@ -26,6 +26,12 @@ Before you start, make sure you have the following:
   echo 'experimental-features = nix-command flakes' >> ~/.config/nix/nix.conf
   ```
 - 2 GB RAM (sufficient for a local two-module test)
+- [`logoscore`](https://github.com/logos-co/logos-logoscore-cli/releases/tag/0.2.0) installed. To install it, use the `install-node-tools.sh` helper script:
+
+   ```bash
+   curl -fsSL https://raw.githubusercontent.com/logos-co/logos-delivery-module/master/scripts/install-node-tools.sh | sh
+   export PATH="$PWD/bin:$PATH"
+   ```
 
 ## What to expect
 
