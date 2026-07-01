@@ -8,5 +8,9 @@
 
 - [Run a Logos Blockchain node on the public testnet from the CLI](../blockchain/get-started/run-a-logos-blockchain-node-from-cli.md)
 
+## Delivery node
+
+- [Run a Logos delivery node](../messaging/delivery/run-logos-delivery-node.md)
+
 <!-- Keep this README at the end of the SUMMARY -->
 - [Readme](README.md)
