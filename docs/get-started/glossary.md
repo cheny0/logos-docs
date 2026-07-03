@@ -1,0 +1,402 @@
+# Glossary
+
+A list of some common terms and phrases specific to the Logos ecosystem.
+
+---
+
+## A
+
+### Account
+
+The basic organisational unit of the LEZ state, with all persistent data stored in accounts. Accounts can be either public or private, and can also represent LEZ programs. See [Introduction to the Logos Execution Zone](../lez/get-started/introduction-to-the-logos-execution-zone.md#accounts-model).
+
+---
+
+## B
+
+### Basecamp
+
+The desktop shell for Logos, which facilitates installing and running Logos modules and apps.
+
+### Bedrock
+
+The foundational layer of the Logos Blockchain, operating as a decentralised peer-to-peer network. See [About Bedrock](../blockchain/concepts/about-bedrock.md).
+
+### Blend Network
+
+A service that adds anonymity for block proposers on the Logos Blockchain. See [About the Blend Network](../blockchain/concepts/about-the-blend-network.md).
+
+### Blend node
+
+A Logos Blockchain node that chooses to participate in the Blend Network. Also known as a **core node**. See [About the Blend Network](../blockchain/concepts/about-the-blend-network.md).
+
+### Blend Protocol
+
+The protocol underlying the Blend Network, which provides anonymity for Logos Blockchain block proposers. See [About the Blend Network](../blockchain/concepts/about-the-blend-network.md).
+
+---
+
+## C
+
+### Channel
+
+A lightweight virtual chain of ordered message logs that represent the state of a Zone on Bedrock. See [About Mantle](../blockchain/concepts/about-mantle.md)
+
+### CID
+
+**Content Identifier**, used to identify files for the storage module.
+
+### Codex
+
+The old name for the Logos Storage component of the Logos technology stack.
+
+### Content topic
+
+A content filter for messages sent via Logos Messaging. See the [Topics specification](https://lip.logos.co/messaging/informational/draft/23/topics.html#content-topics).
+
+### Core node
+
+A Logos Blockchain node that chooses to participate in the Blend Network. Also known as a **Blend node**. See [About the Blend Network](../blockchain/concepts/about-the-blend-network.md).
+
+### Cover traffic
+
+Dummy messages sent by Blend nodes to improve proposer anonymity. See [Cover traffic](../blockchain/concepts/about-the-blend-network.md#cover-traffic).
+
+### Cryptarchia
+
+The Private Proof of Stake consensus protocol used by the Logos Blockchain. See [About Cryptarchia](../blockchain/concepts/about-cryptarchia.md).
+
+---
+
+## D
+
+### Delivery module
+
+A module that uses the Logos Messaging network to send messages and subscript to content topics.
+
+---
+
+## E
+
+### Epoch
+
+A time unit used by the Logos Blockchain, about 7.5 days long. See [About Cryptarchia](../blockchain/concepts/about-cryptarchia.md#time-units).
+
+---
+
+## F
+
+---
+
+## G
+
+### GMS
+
+A **Group Master Secret** - a 32-byte secret used on the LEZ that, when sealed with another party's public sealing key, allows them to create a local instance of a shared LEZ account. See [Set up a shared private LEZ account](../lez/accounts/set-up-shared-private-lez-account.md).
+
+
+### Group Master Secret
+
+A 32-byte secret used on the LEZ that, when sealed with another party's public sealing key, allows them to create a local instance of a shared LEZ account. Also known as a **GMS**. See [Set up a shared private LEZ account](../lez/accounts/set-up-shared-private-lez-account.md).
+
+---
+
+## I
+
+### Inscription
+
+A type of Mantle operation that writes data to the Logos Blockchain. Inscriptions are often used to represent Zone state updates. See [About Mantle](../blockchain/concepts/about-mantle.md).
+
+---
+
+## K
+
+---
+
+## L
+
+### LEE
+
+The **Logos Execution Environment** - the virtual machine that runs on the Logos Execution Zone. See [Introduction to the Logos Execution Zone](../lez/get-started/introduction-to-the-logos-execution-zone.md).
+
+### LEZ
+
+The **Logos Execution Zone** - the primary execution layer for general-purpose applications on Logos, with built-in support for private execution. See [Introduction to the Logos Execution Zone](../lez/get-started/introduction-to-the-logos-execution-zone.md).
+
+### `lgpm`
+
+The official package manager used for Logos modules.
+
+### `lgpd`
+
+The official package downloader for Logos modules.
+
+### `.lgx`
+
+A module file type which allows it to be loaded with `logoscore` and Basecamp.
+
+### LIP
+
+**Logos Improvement Proposal** - a proposed community update to the Logos design, which may or may not be incorporated into the project.
+
+### `lm`
+
+A helper tool for Logos modules.
+
+### Locator
+
+An address assigned to a Logos Blockchain node participating in the Blend Network. See [About the Blend Network](../blockchain/concepts/about-the-blend-network.md#service-declaration-protocol).
+
+### Logos Blockchain
+
+The foundational infrastructure layer of the Logos technology stack. See [Introduction to the Logos Blockchain](../blockchain/get-started/introduction-to-the-logos-blockchain.md).
+
+### Logos Execution Environment
+
+The virtual machine that runs on the Logos Execution Zone. Also known as the **LEE**. See [Introduction to the Logos Execution Zone](../lez/get-started/introduction-to-the-logos-execution-zone.md).
+
+### Logos Execution Zone
+
+The primary execution layer for general-purpose applications on Logos, with built-in support for private execution. Also known as the **LEZ**. See [Introduction to the Logos Execution Zone](../lez/get-started/introduction-to-the-logos-execution-zone.md).
+
+### Logos Node
+
+A node running one or several Logos modules that connect to a network of other such nodes. See [Run a Logos node with blockchain, storage, and delivery](../run-a-node/get-started/run-logos-node-blockchain-storage-delivery.md).
+
+### `logos-module-builder`
+
+A build tool for Logos modules.
+
+### `logos-module-viewer`
+
+A graphical tool for inspecting Logos modules.
+
+### `logos-standalone-app`
+
+An app that displays UI views for Logos modules.
+
+### Logos Storage
+
+The privacy-preserving filesharing component of the Logos technology stack.
+
+### `logoscore`
+
+A daemon that runs Logos modules from the command line.
+
+### LSSA
+
+An old name for the Logos Execution Environment. See [Introduction to the Logos Execution Zone](../lez/get-started/introduction-to-the-logos-execution-zone.md).
+
+---
+
+## M
+
+### Mantle
+
+The execution layer of Bedrock, enabling participation in the Blend Network and facilitating interactions wth Zones. See [About Mantle](../blockchain/concepts/about-mantle.md).
+
+### Message
+
+A virtual "block" of data that forms part of a Logos channel. See [About Mantle](../blockchain/concepts/about-mantle.md).
+
+### Mix
+
+Traffic obfuscation used to improve privacy guarantees.
+
+### Module
+
+A self-contained, resuable software component that provides a specific capability. Multiple modules can be loaded and made to interact to form a complete application.
+
+---
+
+## N
+
+### Nescience
+
+An old name for the Logos Execution Environment. See [Introduction to the Logos Execution Zone](../lez/get-started/introduction-to-the-logos-execution-zone.md).
+
+### Nomos
+
+An old name for the Logos Blockchain. See [Introduction to the Logos Blockchain](../blockchain/get-started/introduction-to-the-logos-blockchain.md).
+
+### Note
+
+A fungible UTXO token used on Mantle. See [About Mantle](../blockchain/concepts/about-mantle.md#mantle-ledger).
+
+### NPK
+
+A **Nullifier Public Key** - a public key used to verify token ownership on the LEZ. See [Introduction to the Logos Execution Zone](../lez/get-started/introduction-to-the-logos-execution-zone.md#accounts-model).
+
+### NSSA
+
+An old name for the Logos Execution Environment. See [Introduction to the Logos Execution Zone](../lez/get-started/introduction-to-the-logos-execution-zone.md).
+
+### NSK
+
+A **Nullifier Secret Key** - a secret key used to sign LEZ transactions. See [Introduction to the Logos Execution Zone](../lez/get-started/introduction-to-the-logos-execution-zone.md#accounts-model).
+
+### Nullifier keys
+
+A key pair used to sign transactions and verify token ownership on the LEZ. See [Introduction to the Logos Execution Zone](../lez/get-started/introduction-to-the-logos-execution-zone.md#accounts-model).
+
+### Nullifier Public Key
+
+A public key used to verify token ownership on the LEZ, also known as an **NPK**. See [Introduction to the Logos Execution Zone](../lez/get-started/introduction-to-the-logos-execution-zone.md#accounts-model).
+
+
+### Nullifier Secret Key
+
+A secret key used to sign LEZ transactions, also known as an **NSK**. See [Introduction to the Logos Execution Zone](../lez/get-started/introduction-to-the-logos-execution-zone.md#accounts-model).
+
+
+---
+
+## O
+
+---
+
+## P
+
+### PDA
+
+**Program Derived Address** - the address assigned to an LEE program. See [Introduction to the Logos Execution Zone](../lez/get-started/introduction-to-the-logos-execution-zone.md).
+
+### PoL
+
+**Proof of Leadership** - the ZK proof that a note's owner is eligible to propose a block. See [About Cryptarchia](../blockchain/concepts/about-cryptarchia.md).
+
+### PPoS
+
+**Private Proof of Stake** - a Proof of Stake consensus mechanism that protects the identity of block proposers. See [About Cryptarchia](../blockchain/concepts/about-cryptarchia.md).
+
+### Private account
+
+A type of LEZ account that keeps its transactions private. Account updates are proven via ZK proofs. See [Introduction to the Logos Execution Zone](../lez/get-started/introduction-to-the-logos-execution-zone.md#accounts-model).
+
+### Private Proof of Stake
+
+A Proof of Stake consensus mechanism that protects the identity of block proposers, also known as **PPoS**. See [About Cryptarchia](../blockchain/concepts/about-cryptarchia.md).
+
+### Program
+
+An executable smart contract on the LEZ, associated with an LEZ account. See [Introduction to the Logos Execution Zone](../lez/get-started/introduction-to-the-logos-execution-zone.md#accounts-model).
+
+### Program Derived Address
+
+The address assigned to an LEZ program, also known as a **PDE**. See [Introduction to the Logos Execution Zone](../lez/get-started/introduction-to-the-logos-execution-zone.md).
+
+### Proof of Leadership
+
+The ZK proof that a note's owner is eligible to propose a block. Also known as **PoL**. See [About Cryptarchia](../blockchain/concepts/about-cryptarchia.md).
+
+### Public account
+
+A type of LEZ account whose state is publicly available. See [Introduction to the Logos Execution Zone](../lez/get-started/introduction-to-the-logos-execution-zone.md#accounts-model).
+
+---
+
+## Q
+
+---
+
+## R
+
+---
+
+## S
+
+### SDP
+
+The **Service Declaration Protocol** - used to keep track of Logos Blockchain nodes that opted in to participate in the Blend Network. See [About the Blend Network](../blockchain/concepts/about-the-blend-network.md#service-declaration-protocol).
+
+### Sealing keys
+
+A key pair used by users of a shared LEZ account, together with the Group Master Secret, to derive a local instance of a shared account. See [Set up a shared private LEZ account](../lez/accounts/set-up-shared-private-lez-account.md).
+
+### Service Declaration Protocol
+
+Used to keep track of Logos Blockchain nodes that opted in to participate in the Blend Network. Also known as the **SDP**. See [About the Blend Network](../blockchain/concepts/about-the-blend-network.md#service-declaration-protocol).
+
+### Service Reward Distribution Protocol
+
+The **Service Reward Distribution Protocol** - enables reward distribution to Logos Blockchain nodes participating in the Blend Network. See [About the Blend Network](../blockchain/concepts/about-the-blend-network.md#service-reward-distribution-protocol).
+
+### Slot
+
+The basic time unit used by the Logos Blockchain, equivalent to 1 second. See [About Cryptarchia](../blockchain/concepts/about-cryptarchia.md#time-units).
+
+### SRDP
+
+Enables reward distribution to Logos Blockchain nodes participating in the Blend Network. Also known as the **SRDP**. See [About the Blend Network](../blockchain/concepts/about-the-blend-network.md#service-reward-distribution-protocol).
+
+### Storage module
+
+The Logos module that provides filesharing capabilities via Logos Storage.
+
+---
+
+## T
+
+### Token definition account
+
+An LEZ account that defines the properties and behaviour of a custom token. See [Create and transfer custom tokens on the Logos Execution Zone](../lez/transfer-tokens/create-and-transfer-custom-tokens-on-the-logos-execution-zone.md).
+
+### Token holding account
+
+An LEZ account that is able to hold a custom token. See [Create and transfer custom tokens on the Logos Execution Zone](../lez/transfer-tokens/create-and-transfer-custom-tokens-on-the-logos-execution-zone.md).
+
+### Token program
+
+An LEZ program that facilitates the creation of custom LEZ tokens. See [Create and transfer custom tokens on the Logos Execution Zone](../lez/transfer-tokens/create-and-transfer-custom-tokens-on-the-logos-execution-zone.md).
+
+---
+
+## U
+
+---
+
+## V
+
+### Viewing keys
+
+A key pair used to generate and verify ZK proofs on the LEZ. See [Introduction to the Logos Execution Zone](../lez/get-started/introduction-to-the-logos-execution-zone.md#accounts-model).
+
+### Viewing Public Key
+
+A public key used to verify ZK proofs on the LEZ, also known as a **VPK**. See [Introduction to the Logos Execution Zone](../lez/get-started/introduction-to-the-logos-execution-zone.md#accounts-model).
+
+### Viewing Secret Key
+
+A secret key used to generate ZK proofs on the LEZ, also known as a **VSK**. See [Introduction to the Logos Execution Zone](../lez/get-started/introduction-to-the-logos-execution-zone.md#accounts-model).
+
+### VPK
+
+A **Viewing Public Key** - a public key used to verify ZK proofs on the LEZ. See [Introduction to the Logos Execution Zone](../lez/get-started/introduction-to-the-logos-execution-zone.md#accounts-model).
+
+### VSK
+
+A **Viewing Secret Key** - a secret key used to generate ZK proofs on the LEZ. See [Introduction to the Logos Execution Zone](../lez/get-started/introduction-to-the-logos-execution-zone.md#accounts-model).
+
+---
+
+## W
+
+### Waku
+
+An old name for the Logos Messaging component of the Logos technology stack.
+
+---
+
+## X
+
+---
+
+## Z
+
+### Zone SDK
+
+An SDK provided by Logos to facilitate the creation of custom Logos Zones. See [About Zones](../blockchain/concepts/about-zones.md).
+
+### Zone
+
+An L2 blockchain that defines its own state but uses the Logos Blockchain for consensus. See [About Zones](../blockchain/concepts/about-zones.md).s
