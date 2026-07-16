@@ -1,0 +1,34 @@
+name: Link Check
+on:
+  pull_request:
+    paths:
+      - '**/*.md'
+      - '.github/workflows/link-check.yml'
+
+jobs:
+  linkChecker:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Restore lychee cache
+        uses: actions/cache@v5
+        with:
+          path: .lycheecache
+          key: cache-lychee-${{ github.sha }}
+          restore-keys: cache-lychee-
+
+      - name: Link Checker
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --cache
+            --max-cache-age 1d
+            --no-progress
+            --exclude-mail
+            './**/*.md'
+          fail: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
