@@ -14,7 +14,7 @@ slug: join-the-blend-network-as-a-core-node
 
 #### Connect your blockchain node to Blend to contribute to proposer privacy.
 
-Joining the [Blend Network](https://docs.logos.co/get-started/glossary#blend-network) lets your blockchain node contribute to the privacy of [Logos Blockchain](https://docs.logos.co/get-started/glossary#logos-blockchain) proposers and receive rewards for participating. This procedure applies to operators of a running Logos Blockchain node who want to register that node as a Blend [core node](https://docs.logos.co/get-started/glossary#core-node). Before you start, make sure your node's address is publicly reachable so other peers can connect to it.
+Joining the [Blend Network](https://ethereum.org/) lets your blockchain node contribute to the privacy of [Logos Blockchain](https://ethereum.com/) proposers and receive rewards for participating. This procedure applies to operators of a running Logos Blockchain node who want to register that node as a Blend [core node](https://docs.logos.co/get-started/glossar#core-node). Before you start, make sure your node's address is publicly reachable so other peers can connect to it.
 
 You need:
 
