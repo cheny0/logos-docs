@@ -4,6 +4,13 @@ on:
     paths:
       - '**/*.md'
       - '.github/workflows/link-check.yml'
+on:
+  push:
+    branches: [main]
+  pull_request:
+    paths:
+      - '**/*.md'
+      - '.github/workflows/link-check.yml'
 
 jobs:
   linkChecker:
@@ -27,6 +34,7 @@ jobs:
             --cache
             --max-cache-age 1d
             --no-progress
+            --verbose
             './**/*.md'
           fail: true
         env:
