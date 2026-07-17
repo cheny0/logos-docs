@@ -11,7 +11,7 @@ Logos ships with a default configuration consisting of the runtime plus storage,
 ## The basics
 
 - Logos is organised into four layers: a runtime at the base, a privacy-preserving networking layer above it, a set of pluggable modules that provide specific capabilities, and decentralised applications on top that compose those modules.
-- [Logos Basecamp](https://docs.logos.co/basecamp) is the default launcher for the stack. It runs the Logos runtime locally, loads a configured module profile, and provides a unified interface. The **Logos Node** runs the same runtime without a user interface, for validators, operators, or backend services.
+- [Logos Basecamp](https://docs.logos.com/basecamp) is the default launcher for the stack. It runs the Logos runtime locally, loads a configured module profile, and provides a unified interface. The **Logos Node** runs the same runtime without a user interface, for validators, operators, or backend services.
 - Privacy is implemented at the infrastructure layer rather than the application layer. An application built on Logos inherits metadata protection and support for private state regardless of whether its developer has implemented anonymity measures directly.
 
 ## Design principles
